@@ -1,7 +1,7 @@
 export const troubleshootingData = [
-    { 
-        title: "Performance Issues", 
-        desc: "Slow, freezing, crashing", 
+    {
+        title: "Performance Issues",
+        desc: "Slow, freezing, crashing",
         iconPath: "M13 10V3L4 14h7v7l9-11h-7z",
         guides: [
             {
@@ -106,9 +106,9 @@ export const troubleshootingData = [
             }
         ]
     },
-    { 
-        title: "Battery & Power", 
-        desc: "Not charging, draining fast", 
+    {
+        title: "Battery & Power",
+        desc: "Not charging, draining fast",
         iconPath: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
         guides: [
             {
@@ -211,9 +211,9 @@ export const troubleshootingData = [
             }
         ]
     },
-    { 
-        title: "Connectivity", 
-        desc: "Wi-Fi, Bluetooth problems", 
+    {
+        title: "Connectivity",
+        desc: "Wi-Fi, Bluetooth problems",
         iconPath: "M8.128 19.825A1.5 1.5 0 0110 18.5v-2.25a1.5 1.5 0 011.5-1.5h.03a1.5 1.5 0 011.5 1.5v2.25a1.5 1.5 0 01-1.872 1.325A9 9 0 1119.5 10.5h.03a1.5 1.5 0 011.5 1.5v2.25a1.5 1.5 0 01-1.5 1.5h-2.25a1.5 1.5 0 01-1.5-1.5v-.03a9 9 0 01-11.872-1.325z",
         guides: [
             {
@@ -716,6 +716,30 @@ export const troubleshootingData = [
                     { title: "Try System Restore", description: "Use System Restore to revert your computer to a previous state when the files existed." },
                     { title: "Use Recovery Software", description: "Try free recovery tools like Recuva or PhotoRec to scan for and recover deleted files." },
                     { title: "Check Cloud Backups", description: "Look in cloud storage services (OneDrive, Google Drive, etc.) for backed-up versions of your files." }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Meeting & Presentation Setup",
+        desc: "Projectors, audio, video conferencing",
+        iconPath: "M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0M21 3H3v12h18V3z",
+        guides: [
+            {
+                category: "Meeting Setup",
+                title: "How to Set Up the Computer and Projector",
+                description: "A step-by-step guide for connecting the computer to the projector for a meeting when the remote is unavailable.",
+                imageUrl: "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-cyan-600",
+                featured: true,
+                solution: [
+                    { title: "Power On All Devices", description: "Before starting, turn on the computer, the projector, and the Alexa speaker. Allow a few minutes for the projector to warm up and fully turn on." },
+                    { title: "Select HDMI Input on Projector", description: "On the projector itself, find the arrow buttons. Press the input/source button to see the options. Use the circular navigation buttons to highlight 'HDMI' and press 'OK'. The projector will now connect to the computer." },
+                    { title: "Wake and Log In to the Computer", description: "The keyboard and mouse are always connected. Press any key or click the mouse to wake the computer. Log in using the office password." },
+                    { title: "Set Up the Camera with OBSOT Centre", description: "Open the 'OBSOT Centre' application. Click the camera icon to open a preview window. Select 'Preset 3' for a standard view, or use the circular motion buttons to manually adjust the camera. Close the small preview window when finished." },
+                    { title: "Join Your Meeting", description: "Minimize the OBSOT Centre (do not close it). Open Google Chrome, go to your Calendar, find the event, and join the meeting. Once joined, double-check that the camera angle is correct." },
+                    { title: "Troubleshooting: No Sound from Alexa", description: "If there is no sound, click the Bluetooth icon in the system tray. Make sure the computer is connected to the Alexa device. If not, select it from the list to connect." },
+                    { title: "Troubleshooting: Microphone Not Working", description: "In your meeting's audio settings, ensure the microphone input source is set to 'USB 3.0' and not any other option." }
                 ]
             }
         ]
