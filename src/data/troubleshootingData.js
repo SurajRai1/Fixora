@@ -475,34 +475,32 @@ export const troubleshootingData = [
             },
             {
                 category: "Software",
-                title: "Microsoft Office Won't Open or Crashes",
-                description: "Resolve common issues with Microsoft Office applications not starting or crashing frequently.",
-                imageUrl: "https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                title: "How to Restore a Previous Version in Google Docs & Sheets",
+                description: "Accidentally deleted something important or made a mistake? Learn how to use Version History to go back in time and restore your file.",
+                imageUrl: "https://images.pexels.com/photos/5926395/pexels-photo-5926395.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
                 categoryColor: "text-violet-500",
-                featured: false,
+                featured: true,
                 solution: [
-                    { title: "Run Office in Safe Mode", description: "Hold Ctrl while clicking the Office app icon, or run 'winword /safe' for Word to start in safe mode." },
-                    { title: "Repair Office Installation", description: "Go to Control Panel > Programs > Microsoft Office, select it, and click 'Change' then 'Quick Repair'." },
-                    { title: "Update Office", description: "Open any Office app, go to File > Account > Update Options > Update Now to install the latest updates." },
-                    { title: "Disable Add-ins", description: "In safe mode, go to File > Options > Add-ins and disable all add-ins to see if one is causing the issue." },
-                    { title: "Create New User Profile", description: "Create a new Windows user account and test Office there to see if the issue is profile-specific." },
-                    { title: "Reset Office Settings", description: "Use the Microsoft Support and Recovery Assistant to automatically diagnose and fix Office issues." }
-                ]
-            },
-            {
-                category: "Software",
-                title: "Antivirus Software Causing Problems",
-                description: "When your antivirus software interferes with normal computer operation, here's how to fix it.",
-                imageUrl: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-                categoryColor: "text-violet-500",
-                featured: false,
-                solution: [
-                    { title: "Update Antivirus Definitions", description: "Ensure your antivirus has the latest virus definitions and program updates." },
-                    { title: "Add Exceptions", description: "Add trusted programs and folders to your antivirus exclusion list to prevent false positives." },
-                    { title: "Adjust Real-time Protection", description: "Temporarily lower real-time protection settings to see if they're causing performance issues." },
-                    { title: "Check for Conflicts", description: "Ensure you don't have multiple antivirus programs running simultaneously, as they can conflict with each other." },
-                    { title: "Reinstall Antivirus", description: "Uninstall the antivirus completely using the manufacturer's removal tool, then reinstall fresh." },
-                    { title: "Switch Antivirus Software", description: "If problems persist, consider switching to a different antivirus solution that's more compatible with your system." }
+                    { 
+                        title: "Step 1: Open the Correct Google Doc or Sheet", 
+                        description: "First, open the file where the mistake was made. You must be inside the specific document to see its history." 
+                    },
+                    { 
+                        title: "Step 2: Access 'Version history'", 
+                        description: "In the menu at the top of the screen, click on 'File', then hover over 'Version history', and in the new menu that appears, click on 'See version history'." 
+                    },
+                    { 
+                        title: "Step 3: Find the Version You Want to Restore", 
+                        description: "A panel will open on the right side of your screen showing a timeline of all saved changes, grouped by date and the person who made them. Click on different timestamps to preview what the document looked like at that exact moment." 
+                    },
+                    { 
+                        title: "Step 4: Click 'Restore this version'", 
+                        description: "Once you have found the correct version you want to go back to, click the large green or blue 'Restore this version' button at the top of the screen. Your document will instantly revert to that saved point." 
+                    },
+                    { 
+                        title: "Pro-Tip: Name Important Versions", 
+                        description: "To make it easy to find important checkpoints (like a final draft), you can name a version. In the 'Version history' panel, click the three dots next to a specific version and select 'Name this version'." 
+                    }
                 ]
             }
         ]
@@ -740,6 +738,321 @@ export const troubleshootingData = [
                     { title: "Join Your Meeting", description: "Minimize the OBSOT Centre (do not close it). Open Google Chrome, go to your Calendar, find the event, and join the meeting. Once joined, double-check that the camera angle is correct." },
                     { title: "Troubleshooting: No Sound from Alexa", description: "If there is no sound, click the Bluetooth icon in the system tray. Make sure the computer is connected to the Alexa device. If not, select it from the list to connect." },
                     { title: "Troubleshooting: Microphone Not Working", description: "In your meeting's audio settings, ensure the microphone input source is set to 'USB 3.0' and not any other option." }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Security & Malware",
+        desc: "Virus removal, account safety",
+        iconPath: "M12 15l-3.262 3.263a2.25 2.25 0 01-3.182 0l-3.263-3.262a2.25 2.25 0 010-3.182l3.262-3.263a2.25 2.25 0 013.182 0L12 11.818V15zm0 0h.01m6.093-6.093a2.25 2.25 0 00-3.182 0l-3.263 3.262a2.25 2.25 0 000 3.182l3.262 3.263a2.25 2.25 0 003.182 0l3.263-3.262a2.25 2.25 0 000-3.182l-3.262-3.263z",
+        guides: [
+            {
+                category: "Security",
+                title: "How to Remove a Virus or Malware",
+                description: "Your computer is acting strange? Follow these steps to scan for and remove malicious software.",
+                imageUrl: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-rose-600",
+                featured: true,
+                solution: [
+                    { title: "Disconnect from the Internet", description: "Immediately disconnect your Wi-Fi or unplug your Ethernet cable to prevent the malware from spreading or sending out your data." },
+                    { title: "Boot into Safe Mode", description: "Restart your computer in Safe Mode with Networking. This loads only essential services and can prevent some malware from running." },
+                    { title: "Run a Full Malware Scan", description: "Use your primary antivirus software to run a comprehensive, full system scan. Don't use a quick scan." },
+                    { title: "Use a Second Opinion Scanner", description: "Download and run a second, on-demand scanner like Malwarebytes to catch anything your primary antivirus might have missed." },
+                    { title: "Clear Browser Cache and Change Passwords", description: "After cleaning the system, clear your browser's cache and change the passwords for all your important online accounts (email, banking, social media)." }
+                ]
+            },
+            {
+                category: "Security",
+                title: "How to Spot and Report a Phishing Email",
+                description: "Learn the key signs of a phishing email and follow our official company procedure for reporting it safely.",
+                imageUrl: "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-rose-600",
+                featured: true,
+                solution: [
+                    { 
+                        title: "Sign 1: Check the Sender's Full Email Address", 
+                        description: "Don't just look at the display name. Check if the email address itself is misspelled, from a public domain (@gmail.com instead of a company one), or looks suspicious." 
+                    },
+                    { 
+                        title: "Sign 2: Watch for Urgent or Threatening Language", 
+                        description: "Be cautious with emails that create panic with phrases like 'Immediate Action Required' or 'Your Account Will Be Suspended'. This is a common tactic to make you act without thinking." 
+                    },
+                    { 
+                        title: "Sign 3: Hover Over Links Before Clicking", 
+                        description: "Always hover your mouse over a link to see the actual web address it leads to. If the destination looks unfamiliar, suspicious, or different from the link text, DO NOT CLICK." 
+                    },
+                    { 
+                        title: "Sign 4: Be Wary of Unexpected Attachments", 
+                        description: "Do not open attachments you weren't expecting, especially files like .zip or .exe. Even Word or PDF files can be dangerous from an unknown sender." 
+                    },
+                    { 
+                        title: "Sign 5: Look for Generic Greetings and Mistakes", 
+                        description: "Phishing emails often use generic greetings like 'Dear Customer' instead of your name, and may contain obvious spelling or grammar errors." 
+                    },
+                    { 
+                        title: "What To Do: Step 1 - DO NOT Interact", 
+                        description: "This is the most critical rule. DO NOT click any links, DO NOT open any attachments, and DO NOT reply to the email. Any interaction is a risk." 
+                    },
+                    { 
+                        title: "What To Do: Step 2 - REPORT the Email Immediately", 
+                        description: "To protect our organization, immediately forward the suspicious email to our dedicated security address: [security@yourcompany.com]. This allows our team to investigate." 
+                    },
+                    { 
+                        title: "What To Do: Step 3 - Delete After Reporting", 
+                        description: "Once you have forwarded the email to the security team, delete it from your inbox. Then, be sure to empty it from your 'Deleted Items' or 'Trash' folder." 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: "User Accounts & Security",
+        desc: "Managing users, passwords, and data safety",
+        iconPath: "M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z",
+        guides: [
+            {
+                category: "User Accounts",
+                title: "How to Safely Remove an Employee's Account from a Windows PC",
+                description: "A step-by-step guide for offboarding an employee and securely removing their user profile and data from a company computer.",
+                imageUrl: "https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-sky-600",
+                featured: true,
+                solution: [
+                    { 
+                        title: "Step 1: Back Up the User's Data (CRITICAL)", 
+                        description: "Before doing anything else, log in as the departing employee. Copy all essential work-related files to a secure location, such as an external hard drive, a shared network drive, or the company's cloud storage. IMPORTANT: This data will be permanently deleted from the PC in the final step." 
+                    },
+                    { 
+                        title: "Step 2: Sign Out of the Employee's Account", 
+                        description: "Once you have confirmed that all necessary data has been safely transferred and backed up, sign out of the employee's user profile to return to the Windows login screen." 
+                    },
+                    { 
+                        title: "Step 3: Log In as an Administrator", 
+                        description: "On the login screen, select an account with administrative privileges. You may need to get the password for this account from your Tech or Operations team." 
+                    },
+                    { 
+                        title: "Step 4: Navigate to Account Settings", 
+                        description: "Once logged in as an administrator, open the 'Settings' app (click the Start Menu and select the gear icon). Inside Settings, click on 'Accounts'." 
+                    },
+                    { 
+                        title: "Step 5: Find the Account to Remove", 
+                        description: "In the Accounts menu, click on 'Family & other users' from the left-hand sidebar. This will show you a list of all non-administrator user accounts on the computer." 
+                    },
+                    { 
+                        title: "Step 6: Remove the Account and Data", 
+                        description: "Click on the employee's account you wish to remove, then click the 'Remove' button. A confirmation window will appear warning that this will delete all of the user's data. Click 'Delete account and data' to complete the process." 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Printing Problems",
+        desc: "Paper jams, not printing, offline errors",
+        iconPath: "M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z",
+        guides: [
+            {
+                category: "Printing",
+                title: "My Document Won't Print: A Step-by-Step Checklist",
+                description: "Follow these common troubleshooting steps when your print job fails to appear.",
+                imageUrl: "https://images.pexels.com/photos/1036804/pexels-photo-1036804.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-slate-500",
+                featured: true,
+                solution: [
+                    { title: "Check the Printer's Display", description: "First, look at the printer's screen. It will often tell you the exact problem, such as 'Out of Paper', 'Paper Jam', or 'Low Toner'." },
+                    { title: "Ensure the Correct Printer is Selected", description: "In the print dialog box on your computer, double-check that you have selected the correct office printer and not 'Microsoft Print to PDF' or another device." },
+                    { title: "Check the Print Queue", description: "Open the print queue on your computer to see if your document is stuck. If there is a long list of old jobs, right-click and 'Cancel All Documents' to clear it." },
+                    { title: "Restart the 'Print Spooler' Service", description: "On Windows, search for 'Services', find 'Print Spooler' in the list, right-click it, and select 'Restart'. This resolves many printing glitches." },
+                    { title: "Check Connections and Power", description: "Make sure the printer is turned on and that the network or USB cable is securely connected." },
+                    { title: "Restart the Printer and Your Computer", description: "The classic fix. Turn the printer off, wait 30 seconds, and turn it back on. If that doesn't work, try restarting your computer." }
+                ]
+            },
+            {
+                category: "Printing",
+                title: "How to Fix an 'Out of Paper' Error",
+                description: "A simple guide for when the printer says it's out of paper, even if you think it isn't.",
+                imageUrl: "https://images.pexels.com/photos/2034873/pexels-photo-2034873.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-slate-500",
+                featured: false,
+                solution: [
+                    { title: "Step 1: Check the Main Paper Tray", description: "Open the primary paper tray (usually labeled '1' or '2'). If it's empty, load it with the correct size paper (typically A4 for office documents)." },
+                    { title: "Step 2: Ensure Paper is Loaded Correctly", description: "If there is paper in the tray, make sure the stack is neat and pushed all the way in. Check that the adjustable paper guides are snug against the sides of the paper." },
+                    { title: "Step 3: Check the Manual Feed/Bypass Tray", description: "Sometimes a print job is set to use a special tray. Check the manual feed slot (often a fold-down flap) to see if it's expecting paper there." },
+                    { title: "Step 4: Look for Small Paper Jams", description: "A tiny, torn piece of paper stuck near a sensor can trick the printer into thinking it's empty. Carefully look inside the tray area and remove any visible obstructions." },
+                    { title: "Step 5: Reset the Printer", description: "After confirming the trays are loaded correctly, turn the printer off, wait 30 seconds, and turn it back on. This will reset the paper sensors." }
+                ]
+            },
+            {
+                category: "Printing",
+                title: "How to Safely Clear a Paper Jam",
+                description: "A step-by-step guide to safely remove stuck paper without damaging your printer.",
+                imageUrl: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-slate-500",
+                featured: false,
+                solution: [
+                    { title: "Step 1: Locate the Jam", description: "Look at the printer's display screen. It will often show an animation or indicate the location of the jam (e.g., Tray 2, rear door, fuser unit)." },
+                    { title: "Step 2: Open All Access Doors", description: "Carefully open the relevant access doors and trays. Follow the path the paper takes through the printer to find the blockage." },
+                    { title: "Step 3: Remove Paper Carefully", description: "Pull the stuck paper out SLOWLY and FIRMLY in the direction of the paper path. Try not to tear it, as small pieces left behind can cause future jams. Use both hands." },
+                    { title: "Step 4: Check for Small Torn Pieces", description: "Once the main sheet is out, thoroughly inspect the area for any small, torn fragments of paper that may be left behind in the rollers." },
+                    { title: "Step 5: Close All Doors Securely", description: "Once you are certain all paper fragments are removed, close all doors. The printer should automatically detect that the jam is cleared and reset itself." }
+                ]
+            },
+            {
+                category: "Printing",
+                title: "How to Fix Poor Print Quality (Streaks or Faded Text)",
+                description: "Getting streaks, smudges, or faded printouts? Here are the common causes and solutions.",
+                imageUrl: "https://images.pexels.com/photos/4009409/pexels-photo-4009409.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-slate-500",
+                featured: false,
+                solution: [
+                    { title: "Step 1: Check Toner/Ink Levels", description: "The most common cause is low toner or ink. Check the printer's display or its status page on your computer to see the current levels." },
+                    { title: "Step 2: Gently Shake the Toner Cartridge", description: "For laser printers, you can often get more life out of a low cartridge. Remove the toner cartridge, gently rock it back and forth to redistribute the toner, and reinsert it." },
+                    { title: "Step 3: Run the Printer's Cleaning Cycle", description: "Most printers have a built-in maintenance function. Find this in the printer's settings menu on its display and run the 'Clean Printhead' or 'Clean Drum' cycle." },
+                    { title: "Step 4: Check EconoMode/Draft Settings", description: "On your computer's print settings, check if 'Toner Save' or 'Draft Mode' is on. This uses less toner and results in a lighter print. Disable it for higher quality." },
+                    { title: "Step 5: Check the Paper", description: "Ensure you are using dry, good-quality paper that is suitable for your printer. Damp or incorrect paper can cause smudges and poor quality." }
+                ]
+            },
+            {
+                category: "Printing",
+                title: "How to Scan a Document (Brother DCP-T820DW)",
+                description: "The step-by-step process for scanning a document to your computer using our Brother office printer.",
+                imageUrl: "https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-slate-500",
+                featured: false,
+                solution: [
+                    { 
+                        title: "Step 1: Place Your Document", 
+                        description: "For single pages, lift the cover and place the document face-down on the scanner glass. For multiple pages, place the stack face-up in the Automatic Document Feeder (ADF) on top of the printer." 
+                    },
+                    { 
+                        title: "Step 2: Press the 'Scan' Button on the Printer", 
+                        description: "On the printer's control panel, press the physical 'Scan' button. This will show the available scanning options on the LCD screen." 
+                    },
+                    { 
+                        title: "Step 3: Select 'Scan to PC'", 
+                        description: "Use the up/down arrow keys on the printer to scroll through the menu. Select the option that says 'Scan to PC' and press the 'OK' button." 
+                    },
+                    { 
+                        title: "Step 4: Select 'Scan to File'", 
+                        description: "The next menu will ask what to do on the PC. The most common option is 'Scan to File'. Select this and press 'OK'. This will save the scan as a file on the computer." 
+                    },
+                    { 
+                        title: "Step 5: Press the 'Start' Button", 
+                        description: "The printer is now ready. Press the green 'Start' button to begin scanning. The document will be scanned and sent to the connected office computer." 
+                    },
+                    { 
+                        title: "Step 6: Find Your Scanned File on the Computer", 
+                        description: "On the computer, the Brother software will pop up with the scanned image. You can save it as a PDF or JPEG. The file is usually saved in your 'Pictures' or 'Documents' folder, inside a folder named 'ControlCenter4'." 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Peripherals & Accessories",
+        desc: "Mouse, keyboard, docks, and external drives",
+        iconPath: "M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.621A3 3 0 0115 18.257V17.25m6-12.75a1.5 1.5 0 01-3 0V6a1.5 1.5 0 013 0v-1.5zm-10.5 0a1.5 1.5 0 01-3 0V6a1.5 1.5 0 013 0v-1.5zM9 12a3 3 0 100-6 3 3 0 000 6z",
+        guides: [
+            {
+                category: "Peripherals",
+                title: "Wireless Mouse or Keyboard Not Connecting",
+                description: "When your wireless mouse or keyboard stops responding, follow these simple steps to get it working again.",
+                imageUrl: "https://images.pexels.com/photos/459762/pexels-photo-459762.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-teal-600",
+                featured: true,
+                solution: [
+                    { 
+                        title: "Step 1: Check Power and Batteries", 
+                        description: "First, make sure the device is switched ON (look for a small switch on the bottom). A good way to check for power is to look for the red sensor light underneath the mouse. If there is no light, the battery is almost certainly dead and needs to be replaced with a fresh set." 
+                    },
+                    { 
+                        title: "Step 2: Check the USB Receiver", 
+                        description: "The small USB dongle that plugs into the computer can sometimes lose connection. Unplug it, wait a few seconds, and plug it back into a DIFFERENT USB port to see if the computer recognizes it." 
+                    },
+                    { 
+                        title: "Step 3: Restart the Computer", 
+                        description: "Sometimes the issue is with the device driver. A simple restart of your computer will reload the drivers and can often fix the connection problem without any other effort." 
+                    },
+                    { 
+                        title: "Step 4: Re-pair the Device", 
+                        description: "Most wireless devices have a small 'Connect' or 'Pair' button. Press the button on the USB receiver and then the corresponding button on the mouse or keyboard to re-establish the connection." 
+                    },
+                    { 
+                        title: "Step 5: For Bluetooth Devices, Use Settings", 
+                        description: "If your device uses Bluetooth (with no USB receiver), go to your computer's Bluetooth settings. Find your device in the list, click to 'Remove' or 'Forget' it, and then pair it again like a new device." 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Office & Onboarding Guides",
+        desc: "Wi-Fi, new setups, and company processes",
+        iconPath: "M12 7.5h1.5m-1.5 4.5h1.5m-7.5 0h7.5m-7.5 4.5h7.5m3-12h.008v.008H18V9.75h-.008v.008H18V9.75zm0 3.75h.008v.008H18v-.008h.008v-.008H18v.008zm0 3.75h.008v.008H18v-.008h.008v-.008H18v.008zM4.5 21V5.25A2.25 2.25 0 016.75 3h10.5A2.25 2.25 0 0119.5 5.25V21M4.5 21h15M4.5 21H3v-4.5a2.25 2.25 0 012.25-2.25h.008a2.25 2.25 0 012.25 2.25v4.5",
+        guides: [
+            {
+                category: "Onboarding",
+                title: "How to Connect to the Office Wi-Fi (nagaed)",
+                description: "A simple guide for employees to connect their new laptops or devices to the primary office Wi-Fi network.",
+                imageUrl: "https://images.pexels.com/photos/4464483/pexels-photo-4464483.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-lime-600",
+                featured: true,
+                solution: [
+                    { 
+                        title: "Step 1: Open the Wi-Fi Menu", 
+                        description: "On your Windows taskbar, at the bottom-right corner of the screen, click on the network icon. This will look like a globe if you are not connected, or a Wi-Fi symbol." 
+                    },
+                    { 
+                        title: "Step 2: Find the 'nagaed' Network", 
+                        description: "A list of available Wi-Fi networks will appear. Look for our official office network, which is named 'nagaed', and click on it." 
+                    },
+                    { 
+                        title: "Step 3: Click 'Connect'", 
+                        description: "Make sure the 'Connect automatically' box is checked so you don't have to repeat this process every day. Then, click the 'Connect' button." 
+                    },
+                    { 
+                        title: "Step 4: Enter the Password", 
+                        description: "The system will now ask for the network password. The current password can be found pasted on the main office router. You can also ask any of your team members for it." 
+                    },
+                    { 
+                        title: "Step 5: Confirm You Are Connected", 
+                        description: "Once the password is correct, your device will connect. The network icon in your taskbar should now say 'nagaed - Connected, secured'. You can now open a web browser to test your internet access." 
+                    }
+                ]
+            },
+            {
+                category: "Onboarding",
+                title: "How to Securely Share Files with Google Drive",
+                description: "The official company process for sharing large files or sensitive documents with colleagues using our shared Google Drive.",
+                imageUrl: "https://images.pexels.com/photos/4197475/pexels-photo-4197475.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+                categoryColor: "text-lime-600",
+                featured: true,
+                solution: [
+                    { 
+                        title: "Step 1: Use the 'Shared Drive', Not 'My Drive'", 
+                        description: "For all official company work, always start in the 'Shared drives' section of Google Drive. This ensures the company retains ownership of the files, even if an employee leaves. Avoid using your personal 'My Drive' for company projects."
+                    },
+                    { 
+                        title: "Step 2: Upload or Create Your Files", 
+                        description: "Navigate to the correct project or department folder within the Shared Drive. You can either drag-and-drop your files from your computer or use the '+ New' button to upload or create a new Google Doc, Sheet, or Slide." 
+                    },
+                    { 
+                        title: "Step 3: Open the 'Share' Menu", 
+                        description: "Right-click on the file or folder you wish to share, and from the menu, select 'Share'." 
+                    },
+                    { 
+                        title: "Step 4: Add People and Set Permissions", 
+                        description: "In the 'Add people and groups' box, type the company email addresses of your colleagues. To the right, choose their permission level: 'Viewer' (can only see), 'Commenter' (can add comments), or 'Editor' (can make changes). Always grant the minimum permission necessary." 
+                    },
+                    { 
+                        title: "Step 5: AVOID 'Anyone with the link' (Important!)", 
+                        description: "For security reasons, never change the 'General access' setting to 'Anyone with the link' for internal or sensitive documents. Always share directly with specific people by adding their email addresses." 
+                    },
+                    { 
+                        title: "Step 6: Send the Notification", 
+                        description: "Ensure the 'Notify people' box is checked and write a brief message if needed. Click 'Send'. Your colleagues will receive an email with a secure link to the shared file or folder." 
+                    }
                 ]
             }
         ]
